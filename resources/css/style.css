@@ -23,18 +23,74 @@ html{
 .row{
     max-width: 1140px;
     margin: 0 auto;
-    color: red;
+}
+section{
+    padding: 80px 0;
+}
+.box{
+    padding: 1%;
+}
+/*--------------------------------------*/
+/*           heading rules            */
+/*--------------------------------------*/
+h1, 
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 h1{
     margin: 0;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 200%; /* in responsive app everything should be relative. in this we have set 200% and universal font is 20px so this is 40px;*/
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+    font-size: 240%; /* in responsive app everything should be relative. in this we have set 240% and universal font is 20px*/
+     word-spacing: 4px;
 }
+h2{
+   font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+/*--------------------------------------*/
+/*           paragraphs rules           */
+/*--------------------------------------*/
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+.box p{
+    font-size: 80%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+/*           icons              */
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+
 
 /*--------------------------------------*/
 /*           buttons rules              */
@@ -118,4 +174,25 @@ header{
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
 
+}
+
+/*--------------------------------------*/
+/*           meals rules               */
+/*--------------------------------------*/
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-pic{
+    width: 100%;
+    margin: 0;
+}
+.meal-pic img{
+    width: 100%;
+    height: auto;
 }
